@@ -1,19 +1,23 @@
 # SoccerDAO
-SoccerDAO  is a social dApp built for anyone who loves exercising and soccer.
 
-SoccerDAO is a platform where Soccer organizers or coordinators can register their soccer community, set up a profile, create bounties,  and receive tips from the community.
+SoccerDAO is a social dApp built for anyone who loves exercising and soccer.
+
+SoccerDAO is a platform where Soccer organizers or coordinators can register their soccer community, set up a profile, create bounties, and receive tips from the community.
 
 Whenever a viewer goes to the SoccerDAO platform will be able to browse all and every soccer organization, and see details from the specific community and exclusive content.
 
 Overall, users will be able to:
+
 - Register to become Official members
 - send or receive donations
 - donate money to their favorite Soccer community
 
 ## Video
+
 https://youtu.be/9RyMDFCMnbE
 
 # How it's made
+
 We use:
 
 `Covalent API endpoints` to get all NFTs balance and metadata from a wallet address such us images, contracts name, NFTs images, and balances.
@@ -38,10 +42,8 @@ We use:
 
 - `React Js, Material-ui, Web3` React Js for the frontend, Material-ui and Web3 to connect to the blockchain.
 
-
-
 Communities Using Covalent API to Fetch all NFTs from a wallet Address
-![Main Page](https://raw.githubusercontent.com/electrone901/Communities-covalent/master/preview.png)
+![Main Page](https://raw.githubusercontent.com/electrone901/SoccerDAO/main/Home.png)
 
 # Getting Started
 

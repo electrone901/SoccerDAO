@@ -18,6 +18,7 @@ import BasicTabs from '../../community/community-container/BasicTabs'
 
 function PageCommunity() {
   const [loading, setLoading] = useState(false)
+  const [unlock, setUnlock] = useState(false)
   const [nfts, setNfts] = useState([])
   const [projectWallet, setProjectWallet] = useState('')
   const [userHistory, setUserHistory] = useState([])
@@ -27,6 +28,16 @@ function PageCommunity() {
     userHistory,
   )
   const userWallet = '0x463Eeb088b094D2CeEec50d186A36DdC80c05870' //need to change
+
+  const checkout = () => {
+    window.unlockProtocol && window.unlockProtocol.loadCheckoutModal()
+    window.addEventListener('unlockProtocol.status', function (event) {
+      if (event.detail.state === 'unlocked') {
+        alert('Worked!')
+        setUnlock(true)
+      }
+    })
+  }
 
   const loadMyCollection = async () => {
     const covalentAPI = 'ckey_d4115699196e4d238fa138e180c'
